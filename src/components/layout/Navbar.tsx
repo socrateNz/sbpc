@@ -31,21 +31,19 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent backdrop-blur-2xl",
         isScrolled
           ? "bg-sbpc-blue/90 backdrop-blur-md border-white/10 shadow-lg py-4"
-          : "bg-transparent py-6"
+          : "py-6 bg-black/30 text"
       )}
     >
-      <div className="container mx-auto px-6 lg:px-12 flex items-center justify-between">
+      <div className="relative container mx-auto px-6 lg:px-12 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl font-bold text-white tracking-wider">
-            SB<span className="text-sbpc-gold">PC</span>
-          </span>
+          <img src="/logo.jpeg" alt="SBPC Logo" className="h-16 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="ml-auto hidden lg:flex items-center gap-8">
           {links.map((link) => (
             <Link
               key={link.href}
