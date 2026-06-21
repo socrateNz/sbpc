@@ -1,29 +1,39 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { PenTool, HardHat, Building, LayoutDashboard, ArrowRight } from "lucide-react";
+import { Ruler, Settings, Map, Building2, Cog, Layers, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const services = [
   {
-    icon: <PenTool size={40} />,
-    title: "Étude & Faisabilité",
-    description: "Analyse technique, financière et réglementaire pour valider le potentiel de votre projet."
+    icon: <Ruler size={40} />,
+    title: "Études Architecturales",
+    description: "Conception et études architecturales sur-mesure pour donner vie à vos projets avec rigueur et créativité."
   },
   {
-    icon: <LayoutDashboard size={40} />,
-    title: "Conception Architecturale",
-    description: "Plans sur-mesure et modélisation 3D pour des espaces modernes et fonctionnels."
+    icon: <Settings size={40} />,
+    title: "Prestation de Service Général",
+    description: "Un accompagnement global couvrant tous les aspects techniques et administratifs de votre projet de construction."
   },
   {
-    icon: <HardHat size={40} />,
-    title: "Construction & Suivi",
-    description: "Pilotage complet du chantier, garantissant qualité, budget et délais."
+    icon: <Map size={40} />,
+    title: "Expertise Topographique",
+    description: "Relevés et analyses topographiques précis pour garantir la fiabilité de vos plans et implantations terrain."
   },
   {
-    icon: <Building size={40} />,
-    title: "Rénovation Premium",
-    description: "Transformation et valorisation de biens existants avec des finitions haut de gamme."
+    icon: <Building2 size={40} />,
+    title: "Réalisation de Bâtiments",
+    description: "Construction et livraison de bâtiments résidentiels, commerciaux et industriels selon les plus hauts standards."
+  },
+  {
+    icon: <Cog size={40} />,
+    title: "Ingénierie",
+    description: "Solutions d'ingénierie structurelle, mécanique et électrique pour des ouvrages solides et pérennes."
+  },
+  {
+    icon: <Layers size={40} />,
+    title: "Forage",
+    description: "Prestations de forage professionnelles pour l'approvisionnement en eau et les fondations spéciales."
   }
 ];
 
@@ -32,6 +42,7 @@ export default function ServicesPage() {
     <div className="pt-24 pb-16">
       <section className="bg-sbpc-blue text-white py-20 text-center">
         <div className="container mx-auto px-6">
+          <span className="text-sbpc-gold font-bold tracking-widest uppercase text-sm mb-4 block">Ce que nous faisons</span>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Nos Services</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto font-light">
             Une expertise globale pour accompagner la réussite de vos projets immobiliers et de construction.
@@ -40,14 +51,14 @@ export default function ServicesPage() {
       </section>
 
       <section className="container mx-auto px-6 py-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              transition={{ delay: index * 0.08 }}
               className="group p-10 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-2xl transition-all"
             >
               <div className="w-20 h-20 bg-sbpc-light text-sbpc-gold rounded-2xl flex items-center justify-center mb-8 group-hover:bg-sbpc-blue group-hover:scale-110 transition-all">

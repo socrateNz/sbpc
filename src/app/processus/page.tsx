@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 
+
 const steps = [
   { title: "Analyse des besoins", desc: "Compréhension approfondie de vos objectifs et contraintes." },
   { title: "Étude technique", desc: "Évaluation de la faisabilité et conception préliminaire." },

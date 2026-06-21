@@ -32,7 +32,6 @@ export default function Footer() {
               <li><Link href="/services" className="hover:text-sbpc-gold transition-colors">Nos Services</Link></li>
               <li><Link href="/realisations" className="hover:text-sbpc-gold transition-colors">Nos Réalisations</Link></li>
               <li><Link href="/processus" className="hover:text-sbpc-gold transition-colors">Notre Processus</Link></li>
-              <li><Link href="/blog" className="hover:text-sbpc-gold transition-colors">Blog & Actualités</Link></li>
             </ul>
           </div>
 
@@ -53,15 +52,15 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="text-sbpc-gold shrink-0 mt-1" size={18} />
-                <span>123 Avenue des Champs-Élysées<br />75008 Paris, France</span>
+                <span>Douala, Cameroun</span>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone className="text-sbpc-gold shrink-0" size={18} />
-                <span>+33 1 23 45 67 89</span>
+              <li className="flex items-start gap-3">
+                <Phone className="text-sbpc-gold shrink-0 mt-1" size={18} />
+                <span>+237 691 46 36 36<br />+237 670 20 20 52</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="text-sbpc-gold shrink-0" size={18} />
-                <span>contact@sbpc-consulting.com</span>
+                <span>solutionbatiplusconsultings@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -70,8 +69,8 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row items-center justify-between text-xs">
           <p>&copy; {new Date().getFullYear()} SBPC. Tous droits réservés.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <Link href="#" className="hover:text-sbpc-gold transition-colors">Mentions Légales</Link>
-            <Link href="#" className="hover:text-sbpc-gold transition-colors">Politique de Confidentialité</Link>
+            <Link href="/mentions-legales" className="hover:text-sbpc-gold transition-colors">Mentions Légales</Link>
+            <Link href="/confidentialite" className="hover:text-sbpc-gold transition-colors">Politique de Confidentialité</Link>
           </div>
         </div>
       </div>

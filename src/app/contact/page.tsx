@@ -9,7 +9,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-6">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Contactez-nous</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto font-light">
-            Notre équipe d'experts est à votre disposition pour échanger sur vos projets et répondre à vos questions.
+            Notre équipe d&apos;experts est à votre disposition pour échanger sur vos projets et répondre à vos questions.
           </p>
         </div>
       </section>
@@ -26,7 +26,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-sbpc-blue mb-1">Notre Agence</h4>
-                  <p className="text-gray-600">123 Avenue des Champs-Élysées<br/>75008 Paris, France</p>
+                  <p className="text-gray-600">Douala, Cameroun</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -35,7 +35,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-sbpc-blue mb-1">Téléphone</h4>
-                  <p className="text-gray-600">+33 1 23 45 67 89</p>
+                  <p className="text-gray-600">+237 691 46 36 36</p>
+                  <p className="text-gray-600">+237 670 20 20 52</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -44,7 +45,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-sbpc-blue mb-1">Email</h4>
-                  <p className="text-gray-600">contact@sbpc-consulting.com</p>
+                  <p className="text-gray-600">solutionbatiplusconsultings@gmail.com</p>
                 </div>
               </div>
             </div>

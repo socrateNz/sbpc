@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 
+
 const projects = [
   {
     title: "Villa Lumina",
